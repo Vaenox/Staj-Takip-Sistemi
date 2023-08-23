@@ -352,7 +352,7 @@
 			this.MinimizeBox = false;
 			this.Name = "personelPanel";
 			this.Text = "personelPanel";
-			this.TransparencyKey = System.Drawing.Color.White;
+			this.TransparencyKey = System.Drawing.Color.DimGray;
 			this.Load += new System.EventHandler(this.personelPanel_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

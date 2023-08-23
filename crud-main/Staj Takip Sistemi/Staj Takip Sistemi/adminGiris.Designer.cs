@@ -89,7 +89,7 @@
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.button1.Location = new System.Drawing.Point(591, 633);
+			this.button1.Location = new System.Drawing.Point(590, 623);
 			this.button1.Margin = new System.Windows.Forms.Padding(4);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(183, 37);
@@ -201,7 +201,7 @@
 			// picError
 			// 
 			this.picError.Image = ((System.Drawing.Image)(resources.GetObject("picError.Image")));
-			this.picError.Location = new System.Drawing.Point(469, 676);
+			this.picError.Location = new System.Drawing.Point(469, 667);
 			this.picError.Name = "picError";
 			this.picError.Size = new System.Drawing.Size(72, 54);
 			this.picError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -213,7 +213,7 @@
 			// 
 			this.labelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.labelError.ForeColor = System.Drawing.Color.White;
-			this.labelError.Location = new System.Drawing.Point(547, 696);
+			this.labelError.Location = new System.Drawing.Point(547, 685);
 			this.labelError.Name = "labelError";
 			this.labelError.Size = new System.Drawing.Size(415, 34);
 			this.labelError.TabIndex = 38;

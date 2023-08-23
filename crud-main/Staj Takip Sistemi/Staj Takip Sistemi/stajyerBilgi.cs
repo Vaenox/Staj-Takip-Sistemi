@@ -18,11 +18,13 @@ namespace Staj_Takip_Sistemi
 		{
 			InitializeComponent();
 		}
-
+		SqlDataAdapter da;
 		SqlConnection con;
 		SqlCommand cmd;
 		SqlDataReader dr;
 		SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-4UEBQES\SQLEXPRESS;Initial Catalog=sts;Integrated Security=True");
+
+		
 
 		private void exitBtn_Click(object sender, EventArgs e)
 		{
@@ -56,5 +58,56 @@ namespace Staj_Takip_Sistemi
 		{
 			toolTip1.SetToolTip(exitBtn, "Kapat");
 		}
+
+		private void stajyerBilgi_Load(object sender, EventArgs e)
+		{
+			// TODO: This line of code loads data into the 'stajProjeDataSet.Stajyer' table. You can move, or remove it, as needed.
+			this.stajyerTableAdapter.Fill(this.stajProjeDataSet.Stajyer);
+			// TODO: This line of code loads data into the 'stajProjeDataSet.Yonetici' table. You can move, or remove it, as needed.
+			this.yoneticiTableAdapter.Fill(this.stajProjeDataSet.Yonetici);
+			// TODO: This line of code loads data into the 'stajProjeDataSet.Departman' table. You can move, or remove it, as needed.
+			this.departmanTableAdapter.Fill(this.stajProjeDataSet.Departman);
+
+		}
+
+		private void ara_Click(object sender, EventArgs e)
+		{
+			string sorgu = "SELECT * FROM Stajyer where stajyerNo=@sNo";
+			con = new SqlConnection(@"Data Source=DESKTOP-4UEBQES\SQLEXPRESS;Initial Catalog=StajProje;Integrated Security=True");
+			cmd = new SqlCommand(sorgu, con);
+			cmd.Parameters.AddWithValue("@sNo", stajyerNo.Text);
+			con.Open();
+			dr = cmd.ExecuteReader();
+			try
+			{
+				if (dr.Read())
+				{
+					
+
+
+					sonuc.Visible = true;
+					label3.Visible = false;
+				}
+				else
+				{
+					
+					label3.Visible = false;
+					labelError.Visible = true;
+					sonuc.Visible = false;
+
+
+				}
+			}
+			catch (Exception Unhandled)
+			{
+				label3.Visible = true;
+				labelError.Visible = false;
+				sonuc.Visible = false;
+			}
+
+			con.Close();
+		}
+
+		
 	}
 }

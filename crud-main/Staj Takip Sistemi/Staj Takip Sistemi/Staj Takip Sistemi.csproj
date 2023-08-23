@@ -77,11 +77,21 @@
       <DependentUpon>personelPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProjeData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjeData.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StajProjeDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StajProjeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StajProjeVeri.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StajProjeVeri.xsd</DependentUpon>
     </Compile>
     <Compile Include="stajyerBilgi.cs">
       <SubType>Form</SubType>
@@ -125,6 +135,17 @@
     <EmbeddedResource Include="yoneticiGiris.resx">
       <DependentUpon>yoneticiGiris.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ProjeData.xsc">
+      <DependentUpon>ProjeData.xsd</DependentUpon>
+    </None>
+    <None Include="ProjeData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjeData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjeData.xss">
+      <DependentUpon>ProjeData.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -144,6 +165,17 @@
     </None>
     <None Include="StajProjeDataSet.xss">
       <DependentUpon>StajProjeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StajProjeVeri.xsc">
+      <DependentUpon>StajProjeVeri.xsd</DependentUpon>
+    </None>
+    <None Include="StajProjeVeri.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StajProjeVeri.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StajProjeVeri.xss">
+      <DependentUpon>StajProjeVeri.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
