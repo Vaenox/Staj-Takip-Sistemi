@@ -41,14 +41,6 @@
 			this.label8 = new System.Windows.Forms.Label();
 			this.ara = new System.Windows.Forms.Button();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.stajyerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.stajyerAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.stajyerSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.baslangicTarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.bitisTarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.stajyerNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.personelIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.departmanIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.stajyerBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.departmanBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.departmanTableAdapter = new Staj_Takip_Sistemi.StajProjeDataSetTableAdapters.DepartmanTableAdapter();
@@ -58,6 +50,20 @@
 			this.label3 = new System.Windows.Forms.Label();
 			this.labelError = new System.Windows.Forms.Label();
 			this.sonuc = new System.Windows.Forms.Label();
+			this.stajyerBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+			this.stajyerBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+			this.fKStajyerDepartm2E1BDC42BindingSource = new System.Windows.Forms.BindingSource(this.components);
+			this.stajyerBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+			this.stajyerBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+			this.stajyerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.stajyerAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.stajyerSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.baslangicTarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.bitisTarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.stajyerNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.personelIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.departmanIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.exitBtn)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.minimizeBtn)).BeginInit();
@@ -68,22 +74,28 @@
 			((System.ComponentModel.ISupportInitialize)(this.stajyerBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.departmanBindingSource)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.yoneticiBindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.stajyerBindingSource1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.stajyerBindingSource2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.fKStajyerDepartm2E1BDC42BindingSource)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.stajyerBindingSource3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.stajyerBindingSource4)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(1196, 108);
+			this.pictureBox1.Location = new System.Drawing.Point(1074, 122);
 			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(296, 270);
+			this.pictureBox1.Size = new System.Drawing.Size(226, 219);
 			this.pictureBox1.TabIndex = 12;
 			this.pictureBox1.TabStop = false;
 			// 
 			// exitBtn
 			// 
 			this.exitBtn.Image = ((System.Drawing.Image)(resources.GetObject("exitBtn.Image")));
-			this.exitBtn.Location = new System.Drawing.Point(1491, 13);
+			this.exitBtn.Location = new System.Drawing.Point(1459, 13);
 			this.exitBtn.Margin = new System.Windows.Forms.Padding(4);
 			this.exitBtn.Name = "exitBtn";
 			this.exitBtn.Size = new System.Drawing.Size(37, 28);
@@ -96,7 +108,7 @@
 			// minimizeBtn
 			// 
 			this.minimizeBtn.Image = ((System.Drawing.Image)(resources.GetObject("minimizeBtn.Image")));
-			this.minimizeBtn.Location = new System.Drawing.Point(1446, 20);
+			this.minimizeBtn.Location = new System.Drawing.Point(1414, 20);
 			this.minimizeBtn.Margin = new System.Windows.Forms.Padding(4);
 			this.minimizeBtn.Name = "minimizeBtn";
 			this.minimizeBtn.Size = new System.Drawing.Size(37, 21);
@@ -133,18 +145,19 @@
 			this.stajyerNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.stajyerNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.stajyerNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.stajyerNo.Location = new System.Drawing.Point(1251, 434);
+			this.stajyerNo.Location = new System.Drawing.Point(1134, 447);
 			this.stajyerNo.Margin = new System.Windows.Forms.Padding(4);
 			this.stajyerNo.Name = "stajyerNo";
 			this.stajyerNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.stajyerNo.Size = new System.Drawing.Size(202, 27);
 			this.stajyerNo.TabIndex = 75;
+			this.stajyerNo.TextChanged += new System.EventHandler(this.stajyerNo_TextChanged);
 			// 
 			// label8
 			// 
 			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label8.ForeColor = System.Drawing.Color.White;
-			this.label8.Location = new System.Drawing.Point(1073, 432);
+			this.label8.Location = new System.Drawing.Point(952, 445);
 			this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(189, 38);
@@ -159,7 +172,7 @@
 			this.ara.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.ara.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.ara.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.ara.Location = new System.Drawing.Point(1196, 521);
+			this.ara.Location = new System.Drawing.Point(1105, 530);
 			this.ara.Margin = new System.Windows.Forms.Padding(4);
 			this.ara.Name = "ara";
 			this.ara.Size = new System.Drawing.Size(183, 37);
@@ -184,14 +197,103 @@
             this.stajyerNoDataGridViewTextBoxColumn,
             this.personelIDDataGridViewTextBoxColumn,
             this.departmanIDDataGridViewTextBoxColumn});
-			this.dataGridView1.DataSource = this.stajyerBindingSource;
-			this.dataGridView1.Location = new System.Drawing.Point(12, 55);
+			this.dataGridView1.DataSource = this.stajyerBindingSource4;
+			this.dataGridView1.Location = new System.Drawing.Point(82, 56);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.ReadOnly = true;
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(1048, 683);
+			this.dataGridView1.Size = new System.Drawing.Size(799, 683);
 			this.dataGridView1.TabIndex = 77;
+			// 
+			// stajyerBindingSource
+			// 
+			this.stajyerBindingSource.DataMember = "Stajyer";
+			this.stajyerBindingSource.DataSource = this.stajProjeDataSetBindingSource;
+			// 
+			// departmanBindingSource
+			// 
+			this.departmanBindingSource.DataMember = "Departman";
+			this.departmanBindingSource.DataSource = this.stajProjeDataSetBindingSource;
+			// 
+			// departmanTableAdapter
+			// 
+			this.departmanTableAdapter.ClearBeforeFill = true;
+			// 
+			// yoneticiBindingSource
+			// 
+			this.yoneticiBindingSource.DataMember = "Yonetici";
+			this.yoneticiBindingSource.DataSource = this.stajProjeDataSetBindingSource;
+			// 
+			// yoneticiTableAdapter
+			// 
+			this.yoneticiTableAdapter.ClearBeforeFill = true;
+			// 
+			// stajyerTableAdapter
+			// 
+			this.stajyerTableAdapter.ClearBeforeFill = true;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+			this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.label3.Location = new System.Drawing.Point(990, 608);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(466, 25);
+			this.label3.TabIndex = 80;
+			this.label3.Text = "!Stajyer Numarası Sadece Rakamlardan Oluşur";
+			this.label3.Visible = false;
+			// 
+			// labelError
+			// 
+			this.labelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelError.ForeColor = System.Drawing.Color.White;
+			this.labelError.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.labelError.Location = new System.Drawing.Point(1041, 608);
+			this.labelError.Name = "labelError";
+			this.labelError.Size = new System.Drawing.Size(415, 34);
+			this.labelError.TabIndex = 78;
+			this.labelError.Text = "!Böyle bir Stajyer Bulunamadı";
+			this.labelError.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			this.labelError.Visible = false;
+			// 
+			// sonuc
+			// 
+			this.sonuc.AutoSize = true;
+			this.sonuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+			this.sonuc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.sonuc.Location = new System.Drawing.Point(1105, 608);
+			this.sonuc.Name = "sonuc";
+			this.sonuc.Size = new System.Drawing.Size(200, 25);
+			this.sonuc.TabIndex = 81;
+			this.sonuc.Text = "!Sonuç Bulundu (1)";
+			this.sonuc.Visible = false;
+			// 
+			// stajyerBindingSource1
+			// 
+			this.stajyerBindingSource1.DataMember = "Stajyer";
+			this.stajyerBindingSource1.DataSource = this.stajProjeDataSetBindingSource;
+			// 
+			// stajyerBindingSource2
+			// 
+			this.stajyerBindingSource2.DataMember = "Stajyer";
+			this.stajyerBindingSource2.DataSource = this.stajProjeDataSetBindingSource;
+			// 
+			// fKStajyerDepartm2E1BDC42BindingSource
+			// 
+			this.fKStajyerDepartm2E1BDC42BindingSource.DataMember = "FK__Stajyer__Departm__2E1BDC42";
+			this.fKStajyerDepartm2E1BDC42BindingSource.DataSource = this.departmanBindingSource;
+			// 
+			// stajyerBindingSource3
+			// 
+			this.stajyerBindingSource3.DataMember = "Stajyer";
+			this.stajyerBindingSource3.DataSource = this.stajProjeDataSetBindingSource;
+			// 
+			// stajyerBindingSource4
+			// 
+			this.stajyerBindingSource4.DataMember = "Stajyer";
+			this.stajyerBindingSource4.DataSource = this.stajProjeDataSetBindingSource;
 			// 
 			// stajyerIDDataGridViewTextBoxColumn
 			// 
@@ -265,77 +367,25 @@
 			this.departmanIDDataGridViewTextBoxColumn.ReadOnly = true;
 			this.departmanIDDataGridViewTextBoxColumn.Width = 125;
 			// 
-			// stajyerBindingSource
+			// pictureBox2
 			// 
-			this.stajyerBindingSource.DataMember = "Stajyer";
-			this.stajyerBindingSource.DataSource = this.stajProjeDataSetBindingSource;
-			// 
-			// departmanBindingSource
-			// 
-			this.departmanBindingSource.DataMember = "Departman";
-			this.departmanBindingSource.DataSource = this.stajProjeDataSetBindingSource;
-			// 
-			// departmanTableAdapter
-			// 
-			this.departmanTableAdapter.ClearBeforeFill = true;
-			// 
-			// yoneticiBindingSource
-			// 
-			this.yoneticiBindingSource.DataMember = "Yonetici";
-			this.yoneticiBindingSource.DataSource = this.stajProjeDataSetBindingSource;
-			// 
-			// yoneticiTableAdapter
-			// 
-			this.yoneticiTableAdapter.ClearBeforeFill = true;
-			// 
-			// stajyerTableAdapter
-			// 
-			this.stajyerTableAdapter.ClearBeforeFill = true;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.label3.Location = new System.Drawing.Point(1092, 601);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(466, 25);
-			this.label3.TabIndex = 80;
-			this.label3.Text = "!Stajyer Numarası Sadece Rakamlardan Oluşur";
-			this.label3.Visible = false;
-			// 
-			// labelError
-			// 
-			this.labelError.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.labelError.ForeColor = System.Drawing.Color.White;
-			this.labelError.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.labelError.Location = new System.Drawing.Point(1092, 601);
-			this.labelError.Name = "labelError";
-			this.labelError.Size = new System.Drawing.Size(415, 34);
-			this.labelError.TabIndex = 78;
-			this.labelError.Text = "!Böyle bir Stajyer Bulunamadı";
-			this.labelError.TextAlign = System.Drawing.ContentAlignment.TopRight;
-			this.labelError.Visible = false;
-			// 
-			// sonuc
-			// 
-			this.sonuc.AutoSize = true;
-			this.sonuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-			this.sonuc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.sonuc.Location = new System.Drawing.Point(1196, 601);
-			this.sonuc.Name = "sonuc";
-			this.sonuc.Size = new System.Drawing.Size(200, 25);
-			this.sonuc.TabIndex = 81;
-			this.sonuc.Text = "!Sonuç Bulundu (1)";
-			this.sonuc.Visible = false;
+			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+			this.pictureBox2.Location = new System.Drawing.Point(1394, 684);
+			this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+			this.pictureBox2.Name = "pictureBox2";
+			this.pictureBox2.Size = new System.Drawing.Size(116, 100);
+			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox2.TabIndex = 82;
+			this.pictureBox2.TabStop = false;
 			// 
 			// stajyerBilgi
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.ClientSize = new System.Drawing.Size(1556, 781);
+			this.ClientSize = new System.Drawing.Size(1509, 781);
 			this.ControlBox = false;
+			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.sonuc);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.labelError);
@@ -364,6 +414,12 @@
 			((System.ComponentModel.ISupportInitialize)(this.stajyerBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.departmanBindingSource)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.yoneticiBindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.stajyerBindingSource1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.stajyerBindingSource2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.fKStajyerDepartm2E1BDC42BindingSource)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.stajyerBindingSource3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.stajyerBindingSource4)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -388,6 +444,9 @@
 		private StajProjeDataSetTableAdapters.YoneticiTableAdapter yoneticiTableAdapter;
 		private System.Windows.Forms.BindingSource stajyerBindingSource;
 		private StajProjeDataSetTableAdapters.StajyerTableAdapter stajyerTableAdapter;
+		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label labelError;
+		private System.Windows.Forms.Label sonuc;
 		private System.Windows.Forms.DataGridViewTextBoxColumn stajyerIDDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn stajyerAdDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn stajyerSoyadDataGridViewTextBoxColumn;
@@ -396,8 +455,11 @@
 		private System.Windows.Forms.DataGridViewTextBoxColumn stajyerNoDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn personelIDDataGridViewTextBoxColumn;
 		private System.Windows.Forms.DataGridViewTextBoxColumn departmanIDDataGridViewTextBoxColumn;
-		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Label labelError;
-		private System.Windows.Forms.Label sonuc;
+		private System.Windows.Forms.BindingSource stajyerBindingSource4;
+		private System.Windows.Forms.BindingSource stajyerBindingSource1;
+		private System.Windows.Forms.BindingSource stajyerBindingSource2;
+		private System.Windows.Forms.BindingSource fKStajyerDepartm2E1BDC42BindingSource;
+		private System.Windows.Forms.BindingSource stajyerBindingSource3;
+		private System.Windows.Forms.PictureBox pictureBox2;
 	}
 }

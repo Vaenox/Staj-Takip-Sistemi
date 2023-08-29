@@ -22,7 +22,7 @@ namespace Staj_Takip_Sistemi
 		SqlConnection con;
 		SqlCommand cmd;
 		SqlDataReader dr;
-		SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-4UEBQES\SQLEXPRESS;Initial Catalog=sts;Integrated Security=True");
+		SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-4UEBQES\SQLEXPRESS;Initial Catalog=StajProje;Integrated Security=True");
 
 		private void minimizeBtn_Click(object sender, EventArgs e)
         {
@@ -68,7 +68,7 @@ namespace Staj_Takip_Sistemi
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			string sorgu = "SELECT * FROM Admin where adminID=@user AND  adminSifre=@pass";
+			string sorgu = "SELECT * FROM Yonetici where yoneticiNo=@user AND  yoneticiSifre=@pass";
 			con = new SqlConnection(@"Data Source=DESKTOP-4UEBQES\SQLEXPRESS;Initial Catalog=StajProje;Integrated Security=True");
 			cmd = new SqlCommand(sorgu, con);
 			cmd.Parameters.AddWithValue("@user", personelNoTxt.Text);
@@ -79,8 +79,8 @@ namespace Staj_Takip_Sistemi
 			{
 				if (dr.Read())
 				{
-					personelEkranı dgiris = new personelEkranı();
-					dgiris.Show();
+					yoneticiPanel yPanel = new yoneticiPanel();
+					yPanel.Show();
 					this.Hide();
 
 				}

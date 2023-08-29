@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,11 @@ namespace Staj_Takip_Sistemi
 		{
 			InitializeComponent();
 		}
+
+		SqlConnection con;
+		SqlCommand cmd;
+		SqlDataReader dr;
+		SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-4UEBQES\\SQLEXPRESS;Initial Catalog=StajProje;Integrated Security=True");
 
 		private void personelPanel_Load(object sender, EventArgs e)
 		{
@@ -62,5 +68,66 @@ namespace Staj_Takip_Sistemi
 			sBilgi.Show();
 			this.Hide();
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+
+			baglanti.Open();
+
+
+			string sorgu1 = "SELECT COUNT(*) FROM Stajyer WHERE stajyerNo = @stajyerNo";
+			SqlCommand komut = new SqlCommand(sorgu1, baglanti);
+			komut.Parameters.AddWithValue("@stajyerNo", stajyerNo.Text);
+			int rowCount = (int)komut.ExecuteScalar();
+
+			if (rowCount == 0)
+			{
+				string sorgu = "INSERT INTO Stajyer(stajyerAd,stajyerSoyad,departmanAdi,stajyerNo,baslangicTarih,bitisTarih)" +
+				"values (@stajyerAd,@stajyerSoyad,@departmanAdi,@stajyerNo,@baslangicTarih,@bitisTarih)";
+				komut = new SqlCommand(sorgu, baglanti);
+				komut.Parameters.AddWithValue("@stajyerAd", stajyerAd.Text);
+				komut.Parameters.AddWithValue("@stajyerSoyad", stajyerSoyad.Text);
+				komut.Parameters.AddWithValue("@departmanAdi", stajyerDepartman.Text);
+				komut.Parameters.AddWithValue("@stajyerNo", stajyerNo.Text);
+				komut.Parameters.AddWithValue("@baslangicTarih", stajBaslangic.Text);
+				komut.Parameters.AddWithValue("@bitisTarih", stajBitis.Text);
+				
+
+				komut.ExecuteNonQuery();
+				
+				MessageBox.Show("Stajyer Kaydedildi!");
+			}
+			else
+			{
+				
+			}
+			baglanti.Close();
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		}
+
+		private void label7_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
+	
 }

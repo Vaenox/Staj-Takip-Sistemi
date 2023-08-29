@@ -123,8 +123,9 @@
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(183, 37);
 			this.button1.TabIndex = 49;
-			this.button1.Text = "Ekle";
+			this.button1.Text = "Stajyer Ekle";
 			this.button1.UseVisualStyleBackColor = false;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// stajyerAd
 			// 
@@ -216,7 +217,7 @@
 			// 
 			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label6.ForeColor = System.Drawing.Color.White;
-			this.label6.Location = new System.Drawing.Point(422, 12);
+			this.label6.Location = new System.Drawing.Point(534, 27);
 			this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(538, 127);
@@ -227,12 +228,13 @@
 			// 
 			this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label7.ForeColor = System.Drawing.Color.White;
-			this.label7.Location = new System.Drawing.Point(691, 180);
+			this.label7.Location = new System.Drawing.Point(681, 180);
 			this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(189, 38);
+			this.label7.Size = new System.Drawing.Size(401, 38);
 			this.label7.TabIndex = 64;
-			this.label7.Text = "Stajyer Ekle";
+			this.label7.Text = "Personel Stajyer İşlemleri";
+			this.label7.Click += new System.EventHandler(this.label7_Click);
 			// 
 			// label8
 			// 

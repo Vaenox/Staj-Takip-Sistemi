@@ -64,12 +64,6 @@
     <Compile Include="kullaniciGiris.Designer.cs">
       <DependentUpon>kullaniciGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="personelEkranı.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="personelEkranı.Designer.cs">
-      <DependentUpon>personelEkranı.cs</DependentUpon>
-    </Compile>
     <Compile Include="personelPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,11 +93,23 @@
     <Compile Include="stajyerBilgi.Designer.cs">
       <DependentUpon>stajyerBilgi.cs</DependentUpon>
     </Compile>
+    <Compile Include="stajyerYonetim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stajyerYonetim.Designer.cs">
+      <DependentUpon>stajyerYonetim.cs</DependentUpon>
+    </Compile>
     <Compile Include="yoneticiGiris.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="yoneticiGiris.Designer.cs">
       <DependentUpon>yoneticiGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yoneticiPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yoneticiPanel.Designer.cs">
+      <DependentUpon>yoneticiPanel.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="adminGiris.resx">
       <DependentUpon>adminGiris.cs</DependentUpon>
@@ -113,9 +119,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="kullaniciGiris.resx">
       <DependentUpon>kullaniciGiris.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="personelEkranı.resx">
-      <DependentUpon>personelEkranı.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="personelPanel.resx">
       <DependentUpon>personelPanel.cs</DependentUpon>
@@ -132,8 +135,14 @@
     <EmbeddedResource Include="stajyerBilgi.resx">
       <DependentUpon>stajyerBilgi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="stajyerYonetim.resx">
+      <DependentUpon>stajyerYonetim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="yoneticiGiris.resx">
       <DependentUpon>yoneticiGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yoneticiPanel.resx">
+      <DependentUpon>yoneticiPanel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ProjeData.xsc">
       <DependentUpon>ProjeData.xsd</DependentUpon>
