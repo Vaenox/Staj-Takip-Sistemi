@@ -67,3 +67,4 @@ C:\Users\burak\Documents\GitHub\Staj-Takip-sistemi\crud-main\Staj Takip Sistemi\
 C:\Users\burak\Documents\GitHub\Staj-Takip-sistemi\crud-main\Staj Takip Sistemi\Staj Takip Sistemi\obj\Debug\Staj Takip Sistemi.pdb
 C:\Users\burak\Documents\GitHub\Staj-Takip-sistemi\crud-main\Staj Takip Sistemi\Staj Takip Sistemi\obj\Debug\Staj_Takip_Sistemi.yoneticiPanel.resources
 C:\Users\burak\Documents\GitHub\Staj-Takip-sistemi\crud-main\Staj Takip Sistemi\Staj Takip Sistemi\obj\Debug\Staj_Takip_Sistemi.stajyerYonetim.resources
+C:\Users\burak\Documents\GitHub\Staj-Takip-sistemi\crud-main\Staj Takip Sistemi\Staj Takip Sistemi\obj\Debug\Staj_Takip_Sistemi.adminPanel.resources

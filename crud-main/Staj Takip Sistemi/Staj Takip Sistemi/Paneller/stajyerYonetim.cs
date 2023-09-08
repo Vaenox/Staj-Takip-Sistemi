@@ -5,13 +5,14 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Staj_Takip_Sistemi
 {
-	public partial class stajyerYonetim : Form
+	public partial class stajyerYonetim :Form 
 	{
 		public stajyerYonetim()
 		{
@@ -85,10 +86,10 @@ namespace Staj_Takip_Sistemi
 			}
 			catch (Exception ex)
 			{
-				label3.Visible = true;
+				
 				labelError.Visible = false;
 				sonuc.Visible = false;
-				MessageBox.Show("Hata: " + ex.Message);
+				MessageBox.Show("Stajyer Numarası sadece sayılardan oluşur!");
 			}
 
 			baglanti.Close();

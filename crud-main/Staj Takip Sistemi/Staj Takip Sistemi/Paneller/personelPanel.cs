@@ -71,9 +71,7 @@ namespace Staj_Takip_Sistemi
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-
 			baglanti.Open();
-
 
 			string sorgu1 = "SELECT COUNT(*) FROM Stajyer WHERE stajyerNo = @stajyerNo";
 			SqlCommand komut = new SqlCommand(sorgu1, baglanti);

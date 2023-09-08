@@ -46,28 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="adminGiris.cs">
+    <Compile Include="Paneller\adminPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="adminGiris.Designer.cs">
+    <Compile Include="Paneller\adminPanel.Designer.cs">
+      <DependentUpon>adminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paneller\adminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paneller\adminGiris.Designer.cs">
       <DependentUpon>adminGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="girisSayfasi.cs">
+    <Compile Include="Paneller\girisSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="girisSayfasi.Designer.cs">
+    <Compile Include="Paneller\girisSayfasi.Designer.cs">
       <DependentUpon>girisSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="kullaniciGiris.cs">
+    <Compile Include="Paneller\kullaniciGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="kullaniciGiris.Designer.cs">
+    <Compile Include="Paneller\kullaniciGiris.Designer.cs">
       <DependentUpon>kullaniciGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="personelPanel.cs">
+    <Compile Include="Paneller\personelPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="personelPanel.Designer.cs">
+    <Compile Include="Paneller\personelPanel.Designer.cs">
       <DependentUpon>personelPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -87,40 +93,43 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StajProjeVeri.xsd</DependentUpon>
     </Compile>
-    <Compile Include="stajyerBilgi.cs">
+    <Compile Include="Paneller\stajyerBilgi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="stajyerBilgi.Designer.cs">
+    <Compile Include="Paneller\stajyerBilgi.Designer.cs">
       <DependentUpon>stajyerBilgi.cs</DependentUpon>
     </Compile>
-    <Compile Include="stajyerYonetim.cs">
+    <Compile Include="Paneller\stajyerYonetim.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="stajyerYonetim.Designer.cs">
+    <Compile Include="Paneller\stajyerYonetim.Designer.cs">
       <DependentUpon>stajyerYonetim.cs</DependentUpon>
     </Compile>
-    <Compile Include="yoneticiGiris.cs">
+    <Compile Include="Paneller\yoneticiGiris.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="yoneticiGiris.Designer.cs">
+    <Compile Include="Paneller\yoneticiGiris.Designer.cs">
       <DependentUpon>yoneticiGiris.cs</DependentUpon>
     </Compile>
-    <Compile Include="yoneticiPanel.cs">
+    <Compile Include="Paneller\yoneticiPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="yoneticiPanel.Designer.cs">
+    <Compile Include="Paneller\yoneticiPanel.Designer.cs">
       <DependentUpon>yoneticiPanel.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="adminGiris.resx">
+    <EmbeddedResource Include="Paneller\adminGiris.resx">
       <DependentUpon>adminGiris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="girisSayfasi.resx">
+    <EmbeddedResource Include="Paneller\adminPanel.resx">
+      <DependentUpon>adminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paneller\girisSayfasi.resx">
       <DependentUpon>girisSayfasi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="kullaniciGiris.resx">
+    <EmbeddedResource Include="Paneller\kullaniciGiris.resx">
       <DependentUpon>kullaniciGiris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="personelPanel.resx">
+    <EmbeddedResource Include="Paneller\personelPanel.resx">
       <DependentUpon>personelPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -132,16 +141,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="stajyerBilgi.resx">
+    <EmbeddedResource Include="Paneller\stajyerBilgi.resx">
       <DependentUpon>stajyerBilgi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="stajyerYonetim.resx">
+    <EmbeddedResource Include="Paneller\stajyerYonetim.resx">
       <DependentUpon>stajyerYonetim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="yoneticiGiris.resx">
+    <EmbeddedResource Include="Paneller\yoneticiGiris.resx">
       <DependentUpon>yoneticiGiris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="yoneticiPanel.resx">
+    <EmbeddedResource Include="Paneller\yoneticiPanel.resx">
       <DependentUpon>yoneticiPanel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ProjeData.xsc">

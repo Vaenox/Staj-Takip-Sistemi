@@ -82,7 +82,7 @@
 			this.sonuc.AutoSize = true;
 			this.sonuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
 			this.sonuc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.sonuc.Location = new System.Drawing.Point(1139, 612);
+			this.sonuc.Location = new System.Drawing.Point(1102, 578);
 			this.sonuc.Name = "sonuc";
 			this.sonuc.Size = new System.Drawing.Size(194, 25);
 			this.sonuc.TabIndex = 93;

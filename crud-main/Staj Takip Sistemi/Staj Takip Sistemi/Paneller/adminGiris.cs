@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Staj_Takip_Sistemi
 {
-    public partial class yoneticiGiris : Form
+    public partial class adminGiris : Form
     {
-        public yoneticiGiris()
+        public adminGiris()
         {
             InitializeComponent();
         }
@@ -22,9 +22,14 @@ namespace Staj_Takip_Sistemi
 		SqlConnection con;
 		SqlCommand cmd;
 		SqlDataReader dr;
-		SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-4UEBQES\SQLEXPRESS;Initial Catalog=StajProje;Integrated Security=True");
+		SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-4UEBQES\SQLEXPRESS;Initial Catalog=sts;Integrated Security=True");
 
-		private void minimizeBtn_Click(object sender, EventArgs e)
+		private void label1_Click(object sender, EventArgs e)
+        {
+			
+		}
+
+        private void minimizeBtn_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized; //ekranda sağ üstte eksi butonuna basınca ekranı alt sekmeye alma kodu
         }
@@ -34,31 +39,9 @@ namespace Staj_Takip_Sistemi
             System.Windows.Forms.Application.Exit(); //ekranda sağ üstteki çarpı butonuna basınca ekranı kapatma kodu
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-		private void yoneticiGiris_Load(object sender, EventArgs e)
+		private void personelNoTxt_TextChanged(object sender, EventArgs e)
 		{
 
-		}
-
-		private void exitBtn_MouseHover(object sender, EventArgs e)
-		{
-			toolTip1.SetToolTip(exitBtn, "Kapat");
-		}
-
-		private void pictureBox2_Click(object sender, EventArgs e)
-		{
-			girisSayfasi gsgiris = new girisSayfasi();
-			gsgiris.Show();
-			this.Hide();
-		}
-
-		private void pictureBox2_MouseHover(object sender, EventArgs e)
-		{
-			toolTip1.SetToolTip(pictureBox2, "Geri");
 		}
 
 		private void minimizeBtn_MouseHover(object sender, EventArgs e)
@@ -66,9 +49,19 @@ namespace Staj_Takip_Sistemi
 			toolTip1.SetToolTip(minimizeBtn, "Küçült");
 		}
 
+		private void exitBtn_MouseHover(object sender, EventArgs e)
+		{
+			toolTip1.SetToolTip(exitBtn, "Kapat");
+		}
+
+		private void pictureBox3_MouseHover(object sender, EventArgs e)
+		{
+			toolTip1.SetToolTip(pictureBox3, "Geri");
+		}
+
 		private void button1_Click(object sender, EventArgs e)
 		{
-			string sorgu = "SELECT * FROM Yonetici where yoneticiNo=@user AND  yoneticiSifre=@pass";
+			string sorgu = "SELECT * FROM Admin where adminNick=@user AND  adminSifre=@pass";
 			con = new SqlConnection(@"Data Source=DESKTOP-4UEBQES\SQLEXPRESS;Initial Catalog=StajProje;Integrated Security=True");
 			cmd = new SqlCommand(sorgu, con);
 			cmd.Parameters.AddWithValue("@user", personelNoTxt.Text);
@@ -79,8 +72,8 @@ namespace Staj_Takip_Sistemi
 			{
 				if (dr.Read())
 				{
-					yoneticiPanel yPanel = new yoneticiPanel();
-					yPanel.Show();
+					adminPanel aPanel = new adminPanel();
+					aPanel.Show();
 					this.Hide();
 
 				}
@@ -88,33 +81,24 @@ namespace Staj_Takip_Sistemi
 				{
 					labelError.Visible = true;
 					picError.Visible = true;
-					label3.Visible = false;
+
 				}
 			}
 			catch (Exception Unhandled)
 			{
-				labelError.Visible = false;
-				label3.Visible = true;
+				labelError.Visible = true;
 				picError.Visible = true;
+
 			}
 
 			con.Close();
-
 		}
 
-		private void personelNoTxt_TextChanged(object sender, EventArgs e)
+		private void pictureBox3_Click(object sender, EventArgs e)
 		{
-
-		}
-
-		private void picError_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void label3_Click(object sender, EventArgs e)
-		{
-
+			girisSayfasi gsgiris = new girisSayfasi();
+			gsgiris.Show();
+			this.Hide();
 		}
 
 		private void picHide_Click(object sender, EventArgs e)
@@ -129,6 +113,11 @@ namespace Staj_Takip_Sistemi
 			personelSifreTxt.UseSystemPasswordChar = false;
 			picEye.Visible = false;
 			picHide.Visible = true;
+		}
+
+		private void adminGiris_Load(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
