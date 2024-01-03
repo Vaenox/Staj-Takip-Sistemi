@@ -47,8 +47,8 @@
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(377, 1);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+			this.pictureBox1.Location = new System.Drawing.Point(445, 13);
+			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(500, 500);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -60,7 +60,7 @@
 			// 
 			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
 			this.pictureBox2.Location = new System.Drawing.Point(1256, 670);
-			this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+			this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.pictureBox2.Name = "pictureBox2";
 			this.pictureBox2.Size = new System.Drawing.Size(116, 100);
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -73,7 +73,7 @@
 			this.girisBtn.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.girisBtn.ForeColor = System.Drawing.Color.White;
 			this.girisBtn.Location = new System.Drawing.Point(924, 583);
-			this.girisBtn.Margin = new System.Windows.Forms.Padding(4);
+			this.girisBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.girisBtn.Name = "girisBtn";
 			this.girisBtn.Size = new System.Drawing.Size(277, 50);
 			this.girisBtn.TabIndex = 4;
@@ -85,7 +85,7 @@
 			// 
 			this.exitBtn.Image = ((System.Drawing.Image)(resources.GetObject("exitBtn.Image")));
 			this.exitBtn.Location = new System.Drawing.Point(1320, 15);
-			this.exitBtn.Margin = new System.Windows.Forms.Padding(4);
+			this.exitBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.exitBtn.Name = "exitBtn";
 			this.exitBtn.Size = new System.Drawing.Size(37, 28);
 			this.exitBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -98,7 +98,7 @@
 			// 
 			this.minimizeBtn.Image = ((System.Drawing.Image)(resources.GetObject("minimizeBtn.Image")));
 			this.minimizeBtn.Location = new System.Drawing.Point(1275, 17);
-			this.minimizeBtn.Margin = new System.Windows.Forms.Padding(4);
+			this.minimizeBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.minimizeBtn.Name = "minimizeBtn";
 			this.minimizeBtn.Size = new System.Drawing.Size(37, 21);
 			this.minimizeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -113,7 +113,7 @@
 			this.yoneticiBtn.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.yoneticiBtn.ForeColor = System.Drawing.Color.White;
 			this.yoneticiBtn.Location = new System.Drawing.Point(553, 583);
-			this.yoneticiBtn.Margin = new System.Windows.Forms.Padding(4);
+			this.yoneticiBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.yoneticiBtn.Name = "yoneticiBtn";
 			this.yoneticiBtn.Size = new System.Drawing.Size(277, 50);
 			this.yoneticiBtn.TabIndex = 7;
@@ -126,8 +126,8 @@
 			this.adminBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
 			this.adminBtn.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.adminBtn.ForeColor = System.Drawing.Color.White;
-			this.adminBtn.Location = new System.Drawing.Point(172, 583);
-			this.adminBtn.Margin = new System.Windows.Forms.Padding(4);
+			this.adminBtn.Location = new System.Drawing.Point(149, 583);
+			this.adminBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.adminBtn.Name = "adminBtn";
 			this.adminBtn.Size = new System.Drawing.Size(277, 50);
 			this.adminBtn.TabIndex = 8;
@@ -149,7 +149,7 @@
 			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.pictureBox1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(4);
+			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
 			this.Name = "girisSayfasi";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Form1";

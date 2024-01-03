@@ -66,6 +66,16 @@
 			this.yoneticiSoyaditxt = new System.Windows.Forms.Label();
 			this.yoneticiAd = new System.Windows.Forms.TextBox();
 			this.yoneticiAditxt = new System.Windows.Forms.Label();
+			this.yoneticiSifre = new System.Windows.Forms.TextBox();
+			this.yoneticiSifreTxt = new System.Windows.Forms.Label();
+			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.yoneticiMail = new System.Windows.Forms.TextBox();
+			this.yoneticiMailTxt = new System.Windows.Forms.Label();
+			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.label8 = new System.Windows.Forms.Label();
+			this.label9 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.exitBtn)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.minimizeBtn)).BeginInit();
@@ -115,7 +125,7 @@
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(62, 42);
+			this.pictureBox1.Location = new System.Drawing.Point(57, 30);
 			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(312, 297);
@@ -172,7 +182,7 @@
 			this.personelNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.personelNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.personelNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.personelNo.Location = new System.Drawing.Point(603, 476);
+			this.personelNo.Location = new System.Drawing.Point(644, 476);
 			this.personelNo.Margin = new System.Windows.Forms.Padding(4);
 			this.personelNo.Name = "personelNo";
 			this.personelNo.Size = new System.Drawing.Size(353, 27);
@@ -184,7 +194,7 @@
 			// 
 			this.personelNotxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.personelNotxt.ForeColor = System.Drawing.Color.White;
-			this.personelNotxt.Location = new System.Drawing.Point(427, 474);
+			this.personelNotxt.Location = new System.Drawing.Point(384, 474);
 			this.personelNotxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.personelNotxt.Name = "personelNotxt";
 			this.personelNotxt.Size = new System.Drawing.Size(260, 38);
@@ -211,7 +221,7 @@
 			this.personelDepartman.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.personelDepartman.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.personelDepartman.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.personelDepartman.Location = new System.Drawing.Point(603, 436);
+			this.personelDepartman.Location = new System.Drawing.Point(645, 436);
 			this.personelDepartman.Margin = new System.Windows.Forms.Padding(4);
 			this.personelDepartman.Name = "personelDepartman";
 			this.personelDepartman.Size = new System.Drawing.Size(353, 27);
@@ -224,7 +234,7 @@
 			this.personelSoyad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.personelSoyad.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.personelSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.personelSoyad.Location = new System.Drawing.Point(603, 398);
+			this.personelSoyad.Location = new System.Drawing.Point(645, 398);
 			this.personelSoyad.Margin = new System.Windows.Forms.Padding(4);
 			this.personelSoyad.Name = "personelSoyad";
 			this.personelSoyad.Size = new System.Drawing.Size(353, 27);
@@ -236,7 +246,7 @@
 			// 
 			this.personelDepartmantxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.personelDepartmantxt.ForeColor = System.Drawing.Color.White;
-			this.personelDepartmantxt.Location = new System.Drawing.Point(427, 436);
+			this.personelDepartmantxt.Location = new System.Drawing.Point(385, 436);
 			this.personelDepartmantxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.personelDepartmantxt.Name = "personelDepartmantxt";
 			this.personelDepartmantxt.Size = new System.Drawing.Size(189, 38);
@@ -249,7 +259,7 @@
 			// 
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(588, 462);
+			this.label4.Location = new System.Drawing.Point(587, 462);
 			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(189, 38);
@@ -260,7 +270,7 @@
 			// 
 			this.personelSoyadtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.personelSoyadtxt.ForeColor = System.Drawing.Color.White;
-			this.personelSoyadtxt.Location = new System.Drawing.Point(427, 398);
+			this.personelSoyadtxt.Location = new System.Drawing.Point(385, 398);
 			this.personelSoyadtxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.personelSoyadtxt.Name = "personelSoyadtxt";
 			this.personelSoyadtxt.Size = new System.Drawing.Size(189, 38);
@@ -274,7 +284,7 @@
 			this.personelAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.personelAd.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.personelAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.personelAd.Location = new System.Drawing.Point(603, 359);
+			this.personelAd.Location = new System.Drawing.Point(645, 359);
 			this.personelAd.Margin = new System.Windows.Forms.Padding(4);
 			this.personelAd.Name = "personelAd";
 			this.personelAd.Size = new System.Drawing.Size(353, 27);
@@ -286,7 +296,7 @@
 			// 
 			this.personelAdtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.personelAdtxt.ForeColor = System.Drawing.Color.White;
-			this.personelAdtxt.Location = new System.Drawing.Point(427, 357);
+			this.personelAdtxt.Location = new System.Drawing.Point(385, 357);
 			this.personelAdtxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.personelAdtxt.Name = "personelAdtxt";
 			this.personelAdtxt.Size = new System.Drawing.Size(189, 38);
@@ -302,7 +312,7 @@
 			this.personelSilbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.personelSilbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.personelSilbtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.personelSilbtn.Location = new System.Drawing.Point(921, 548);
+			this.personelSilbtn.Location = new System.Drawing.Point(916, 611);
 			this.personelSilbtn.Margin = new System.Windows.Forms.Padding(4);
 			this.personelSilbtn.Name = "personelSilbtn";
 			this.personelSilbtn.Size = new System.Drawing.Size(190, 54);
@@ -318,7 +328,7 @@
 			this.personelEklebtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.personelEklebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.personelEklebtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.personelEklebtn.Location = new System.Drawing.Point(304, 542);
+			this.personelEklebtn.Location = new System.Drawing.Point(299, 605);
 			this.personelEklebtn.Margin = new System.Windows.Forms.Padding(4);
 			this.personelEklebtn.Name = "personelEklebtn";
 			this.personelEklebtn.Size = new System.Drawing.Size(199, 54);
@@ -334,7 +344,7 @@
 			this.personelGuncellebtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.personelGuncellebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.personelGuncellebtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.personelGuncellebtn.Location = new System.Drawing.Point(626, 542);
+			this.personelGuncellebtn.Location = new System.Drawing.Point(621, 605);
 			this.personelGuncellebtn.Margin = new System.Windows.Forms.Padding(4);
 			this.personelGuncellebtn.Name = "personelGuncellebtn";
 			this.personelGuncellebtn.Size = new System.Drawing.Size(203, 54);
@@ -350,7 +360,7 @@
 			this.yoneticiSilbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.yoneticiSilbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.yoneticiSilbtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.yoneticiSilbtn.Location = new System.Drawing.Point(921, 551);
+			this.yoneticiSilbtn.Location = new System.Drawing.Point(916, 614);
 			this.yoneticiSilbtn.Margin = new System.Windows.Forms.Padding(4);
 			this.yoneticiSilbtn.Name = "yoneticiSilbtn";
 			this.yoneticiSilbtn.Size = new System.Drawing.Size(190, 49);
@@ -358,6 +368,7 @@
 			this.yoneticiSilbtn.Text = "Yönetici Sil";
 			this.yoneticiSilbtn.UseVisualStyleBackColor = false;
 			this.yoneticiSilbtn.Visible = false;
+			this.yoneticiSilbtn.Click += new System.EventHandler(this.yoneticiSilbtn_Click);
 			// 
 			// yoneticiEklebtn
 			// 
@@ -366,7 +377,7 @@
 			this.yoneticiEklebtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.yoneticiEklebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.yoneticiEklebtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.yoneticiEklebtn.Location = new System.Drawing.Point(304, 542);
+			this.yoneticiEklebtn.Location = new System.Drawing.Point(299, 605);
 			this.yoneticiEklebtn.Margin = new System.Windows.Forms.Padding(4);
 			this.yoneticiEklebtn.Name = "yoneticiEklebtn";
 			this.yoneticiEklebtn.Size = new System.Drawing.Size(203, 54);
@@ -383,7 +394,7 @@
 			this.yoneticiGuncellebtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.yoneticiGuncellebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.yoneticiGuncellebtn.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.yoneticiGuncellebtn.Location = new System.Drawing.Point(626, 545);
+			this.yoneticiGuncellebtn.Location = new System.Drawing.Point(621, 608);
 			this.yoneticiGuncellebtn.Margin = new System.Windows.Forms.Padding(4);
 			this.yoneticiGuncellebtn.Name = "yoneticiGuncellebtn";
 			this.yoneticiGuncellebtn.Size = new System.Drawing.Size(203, 49);
@@ -391,13 +402,14 @@
 			this.yoneticiGuncellebtn.Text = "Yönetici Güncelle";
 			this.yoneticiGuncellebtn.UseVisualStyleBackColor = false;
 			this.yoneticiGuncellebtn.Visible = false;
+			this.yoneticiGuncellebtn.Click += new System.EventHandler(this.yoneticiGuncellebtn_Click);
 			// 
 			// yoneticiNo
 			// 
 			this.yoneticiNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.yoneticiNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.yoneticiNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.yoneticiNo.Location = new System.Drawing.Point(603, 476);
+			this.yoneticiNo.Location = new System.Drawing.Point(644, 476);
 			this.yoneticiNo.Margin = new System.Windows.Forms.Padding(4);
 			this.yoneticiNo.Name = "yoneticiNo";
 			this.yoneticiNo.Size = new System.Drawing.Size(353, 27);
@@ -408,10 +420,10 @@
 			// 
 			this.yoneticiNotxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.yoneticiNotxt.ForeColor = System.Drawing.Color.White;
-			this.yoneticiNotxt.Location = new System.Drawing.Point(428, 474);
+			this.yoneticiNotxt.Location = new System.Drawing.Point(385, 474);
 			this.yoneticiNotxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.yoneticiNotxt.Name = "yoneticiNotxt";
-			this.yoneticiNotxt.Size = new System.Drawing.Size(259, 38);
+			this.yoneticiNotxt.Size = new System.Drawing.Size(188, 38);
 			this.yoneticiNotxt.TabIndex = 107;
 			this.yoneticiNotxt.Text = "Yönetici No:";
 			this.yoneticiNotxt.Visible = false;
@@ -433,7 +445,7 @@
 			this.yoneticiDepartman.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.yoneticiDepartman.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.yoneticiDepartman.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.yoneticiDepartman.Location = new System.Drawing.Point(603, 436);
+			this.yoneticiDepartman.Location = new System.Drawing.Point(645, 436);
 			this.yoneticiDepartman.Margin = new System.Windows.Forms.Padding(4);
 			this.yoneticiDepartman.Name = "yoneticiDepartman";
 			this.yoneticiDepartman.Size = new System.Drawing.Size(353, 27);
@@ -445,7 +457,7 @@
 			this.yoneticiSoyad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.yoneticiSoyad.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.yoneticiSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.yoneticiSoyad.Location = new System.Drawing.Point(603, 398);
+			this.yoneticiSoyad.Location = new System.Drawing.Point(645, 398);
 			this.yoneticiSoyad.Margin = new System.Windows.Forms.Padding(4);
 			this.yoneticiSoyad.Name = "yoneticiSoyad";
 			this.yoneticiSoyad.Size = new System.Drawing.Size(353, 27);
@@ -456,19 +468,19 @@
 			// 
 			this.yoneticiDepartmantxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.yoneticiDepartmantxt.ForeColor = System.Drawing.Color.White;
-			this.yoneticiDepartmantxt.Location = new System.Drawing.Point(427, 436);
+			this.yoneticiDepartmantxt.Location = new System.Drawing.Point(385, 436);
 			this.yoneticiDepartmantxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.yoneticiDepartmantxt.Name = "yoneticiDepartmantxt";
-			this.yoneticiDepartmantxt.Size = new System.Drawing.Size(189, 38);
+			this.yoneticiDepartmantxt.Size = new System.Drawing.Size(230, 38);
 			this.yoneticiDepartmantxt.TabIndex = 103;
-			this.yoneticiDepartmantxt.Text = "Departmanı:";
+			this.yoneticiDepartmantxt.Text = "Departman ID:";
 			this.yoneticiDepartmantxt.Visible = false;
 			// 
 			// yoneticiSoyaditxt
 			// 
 			this.yoneticiSoyaditxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.yoneticiSoyaditxt.ForeColor = System.Drawing.Color.White;
-			this.yoneticiSoyaditxt.Location = new System.Drawing.Point(427, 398);
+			this.yoneticiSoyaditxt.Location = new System.Drawing.Point(385, 398);
 			this.yoneticiSoyaditxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.yoneticiSoyaditxt.Name = "yoneticiSoyaditxt";
 			this.yoneticiSoyaditxt.Size = new System.Drawing.Size(189, 38);
@@ -481,7 +493,7 @@
 			this.yoneticiAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.yoneticiAd.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.yoneticiAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.yoneticiAd.Location = new System.Drawing.Point(603, 359);
+			this.yoneticiAd.Location = new System.Drawing.Point(645, 359);
 			this.yoneticiAd.Margin = new System.Windows.Forms.Padding(4);
 			this.yoneticiAd.Name = "yoneticiAd";
 			this.yoneticiAd.Size = new System.Drawing.Size(353, 27);
@@ -492,13 +504,129 @@
 			// 
 			this.yoneticiAditxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.yoneticiAditxt.ForeColor = System.Drawing.Color.White;
-			this.yoneticiAditxt.Location = new System.Drawing.Point(427, 357);
+			this.yoneticiAditxt.Location = new System.Drawing.Point(385, 357);
 			this.yoneticiAditxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.yoneticiAditxt.Name = "yoneticiAditxt";
 			this.yoneticiAditxt.Size = new System.Drawing.Size(189, 38);
 			this.yoneticiAditxt.TabIndex = 99;
 			this.yoneticiAditxt.Text = "Adı:";
 			this.yoneticiAditxt.Visible = false;
+			// 
+			// yoneticiSifre
+			// 
+			this.yoneticiSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
+			this.yoneticiSifre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.yoneticiSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.yoneticiSifre.Location = new System.Drawing.Point(644, 516);
+			this.yoneticiSifre.Margin = new System.Windows.Forms.Padding(4);
+			this.yoneticiSifre.Name = "yoneticiSifre";
+			this.yoneticiSifre.Size = new System.Drawing.Size(353, 27);
+			this.yoneticiSifre.TabIndex = 116;
+			this.yoneticiSifre.Visible = false;
+			// 
+			// yoneticiSifreTxt
+			// 
+			this.yoneticiSifreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.yoneticiSifreTxt.ForeColor = System.Drawing.Color.White;
+			this.yoneticiSifreTxt.Location = new System.Drawing.Point(385, 514);
+			this.yoneticiSifreTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.yoneticiSifreTxt.Name = "yoneticiSifreTxt";
+			this.yoneticiSifreTxt.Size = new System.Drawing.Size(230, 46);
+			this.yoneticiSifreTxt.TabIndex = 115;
+			this.yoneticiSifreTxt.Text = "Yönetici Şifre:";
+			this.yoneticiSifreTxt.Visible = false;
+			// 
+			// textBox2
+			// 
+			this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
+			this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.textBox2.Location = new System.Drawing.Point(644, 516);
+			this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+			this.textBox2.Name = "textBox2";
+			this.textBox2.Size = new System.Drawing.Size(353, 27);
+			this.textBox2.TabIndex = 114;
+			this.textBox2.Visible = false;
+			// 
+			// label5
+			// 
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label5.ForeColor = System.Drawing.Color.White;
+			this.label5.Location = new System.Drawing.Point(384, 514);
+			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(260, 46);
+			this.label5.TabIndex = 113;
+			this.label5.Text = "Personel No:";
+			this.label5.Visible = false;
+			// 
+			// label6
+			// 
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label6.ForeColor = System.Drawing.Color.White;
+			this.label6.Location = new System.Drawing.Point(587, 502);
+			this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(189, 46);
+			this.label6.TabIndex = 112;
+			// 
+			// yoneticiMail
+			// 
+			this.yoneticiMail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
+			this.yoneticiMail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.yoneticiMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.yoneticiMail.Location = new System.Drawing.Point(644, 560);
+			this.yoneticiMail.Margin = new System.Windows.Forms.Padding(4);
+			this.yoneticiMail.Name = "yoneticiMail";
+			this.yoneticiMail.Size = new System.Drawing.Size(353, 27);
+			this.yoneticiMail.TabIndex = 121;
+			this.yoneticiMail.Visible = false;
+			// 
+			// yoneticiMailTxt
+			// 
+			this.yoneticiMailTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.yoneticiMailTxt.ForeColor = System.Drawing.Color.White;
+			this.yoneticiMailTxt.Location = new System.Drawing.Point(391, 558);
+			this.yoneticiMailTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.yoneticiMailTxt.Name = "yoneticiMailTxt";
+			this.yoneticiMailTxt.Size = new System.Drawing.Size(231, 46);
+			this.yoneticiMailTxt.TabIndex = 120;
+			this.yoneticiMailTxt.Text = "Yönetici Mail:";
+			this.yoneticiMailTxt.Visible = false;
+			// 
+			// textBox4
+			// 
+			this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
+			this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.textBox4.Location = new System.Drawing.Point(644, 560);
+			this.textBox4.Margin = new System.Windows.Forms.Padding(4);
+			this.textBox4.Name = "textBox4";
+			this.textBox4.Size = new System.Drawing.Size(353, 27);
+			this.textBox4.TabIndex = 119;
+			this.textBox4.Visible = false;
+			// 
+			// label8
+			// 
+			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label8.ForeColor = System.Drawing.Color.White;
+			this.label8.Location = new System.Drawing.Point(384, 558);
+			this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(260, 46);
+			this.label8.TabIndex = 118;
+			this.label8.Text = "Personel No:";
+			this.label8.Visible = false;
+			// 
+			// label9
+			// 
+			this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label9.ForeColor = System.Drawing.Color.White;
+			this.label9.Location = new System.Drawing.Point(587, 546);
+			this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label9.Name = "label9";
+			this.label9.Size = new System.Drawing.Size(189, 46);
+			this.label9.TabIndex = 117;
 			// 
 			// adminPanel
 			// 
@@ -507,6 +635,16 @@
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
 			this.ClientSize = new System.Drawing.Size(1355, 729);
 			this.ControlBox = false;
+			this.Controls.Add(this.yoneticiMail);
+			this.Controls.Add(this.yoneticiMailTxt);
+			this.Controls.Add(this.textBox4);
+			this.Controls.Add(this.label8);
+			this.Controls.Add(this.label9);
+			this.Controls.Add(this.yoneticiSifre);
+			this.Controls.Add(this.yoneticiSifreTxt);
+			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.label5);
+			this.Controls.Add(this.label6);
 			this.Controls.Add(this.yoneticiSilbtn);
 			this.Controls.Add(this.yoneticiEklebtn);
 			this.Controls.Add(this.yoneticiGuncellebtn);
@@ -594,5 +732,15 @@
 		private System.Windows.Forms.Label yoneticiSoyaditxt;
 		private System.Windows.Forms.TextBox yoneticiAd;
 		private System.Windows.Forms.Label yoneticiAditxt;
+		private System.Windows.Forms.TextBox yoneticiSifre;
+		private System.Windows.Forms.Label yoneticiSifreTxt;
+		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.TextBox yoneticiMail;
+		private System.Windows.Forms.Label yoneticiMailTxt;
+		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.Label label8;
+		private System.Windows.Forms.Label label9;
 	}
 }

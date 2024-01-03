@@ -136,6 +136,11 @@ namespace Staj_Takip_Sistemi
 				yoneticiDepartmantxt.Visible = true;
 				yoneticiNo.Visible = true;
 				yoneticiNotxt.Visible = true;
+				yoneticiSifreTxt.Visible = true;
+				yoneticiSifre.Visible= true;
+				yoneticiMailTxt.Visible = true;
+				yoneticiMail.Visible = true;
+
 
 				yoneticiEklebtn.Visible = true;
 				yoneticiGuncellebtn.Visible = true;
@@ -200,7 +205,97 @@ namespace Staj_Takip_Sistemi
 
 		private void yoneticiEklebtn_Click(object sender, EventArgs e)
 		{
-			
+			baglanti.Open();
+
+
+			string sorgu1 = "SELECT COUNT(*) FROM Yonetici WHERE yoneticiNo = @yoneticiNo";
+			SqlCommand komut = new SqlCommand(sorgu1, baglanti);
+			komut.Parameters.AddWithValue("@yoneticiNo", yoneticiNo.Text);
+			int rowCount = (int)komut.ExecuteScalar();
+
+			if (rowCount == 0)
+			{
+				string sorgu = "INSERT INTO Yonetici(yoneticiAd,yoneticiSoyad,departmanID,yoneticiNo,yoneticiSifre,yoneticiEposta)" +
+				"values (@yoneticiAd,@yoneticiSoyad,@departmanID,@yoneticiNo,@yoneticiSifre,@yoneticiEposta)";
+				komut = new SqlCommand(sorgu, baglanti);
+				komut.Parameters.AddWithValue("@yoneticiAd", yoneticiAd.Text);
+				komut.Parameters.AddWithValue("@yoneticiSoyad", yoneticiSoyad.Text);
+				komut.Parameters.AddWithValue("@departmanID", yoneticiDepartman.Text);
+				komut.Parameters.AddWithValue("@yoneticiNo", yoneticiNo.Text);
+				komut.Parameters.AddWithValue("@yoneticiSifre", yoneticiSifre.Text);
+				komut.Parameters.AddWithValue("@yoneticiEposta", yoneticiMail.Text);
+
+
+				komut.ExecuteNonQuery();
+
+				MessageBox.Show("Yönetici Kaydedildi!");
+			}
+			else
+			{
+				MessageBox.Show("Bir Hata Oluştu. Lütfen Tekrar Deneyin.");
+			}
+			baglanti.Close();
+		}
+
+		private void yoneticiGuncellebtn_Click(object sender, EventArgs e)
+		{
+			baglanti.Open();
+
+
+			string sorgu1 = "SELECT COUNT(*) FROM Yonetici WHERE yoneticiNo = @yoneticiNo";
+			SqlCommand komut = new SqlCommand(sorgu1, baglanti);
+			komut.Parameters.AddWithValue("@yoneticiNo", yoneticiNo.Text);
+			int rowCount = (int)komut.ExecuteScalar();
+
+			if (rowCount != 0)
+			{
+				string sorgu = "UPDATE Yonetici SET yoneticiAd = @yoneticiAd, yoneticiSoyad = @yoneticiSoyad, departmanID = @departmanID, " +
+							   "yoneticiNo = @yoneticiNo, yoneticiSifre = @yoneticiSifre, yoneticiEposta = @yoneticiEposta" +
+							   " WHERE yoneticiNo = @yoneticiNo";
+				komut = new SqlCommand(sorgu, baglanti);
+				komut.Parameters.AddWithValue("@yoneticiAd", yoneticiAd.Text);
+				komut.Parameters.AddWithValue("@yoneticiSoyad", yoneticiSoyad.Text);
+				komut.Parameters.AddWithValue("@departmanID", yoneticiDepartman.Text);
+				komut.Parameters.AddWithValue("@yoneticiNo", yoneticiNo.Text);
+				komut.Parameters.AddWithValue("@yoneticiSifre", yoneticiSifre.Text);
+				komut.Parameters.AddWithValue("@yoneticiEposta", yoneticiMail.Text);
+
+
+				komut.ExecuteNonQuery();
+
+				MessageBox.Show("Yönetici Bilgileri Güncellendi!");
+			}
+			else
+			{
+				MessageBox.Show("Bu yönetici numarasına sahip bir kayıt bulunamadı.");
+			}
+			baglanti.Close();
+		}
+
+		private void yoneticiSilbtn_Click(object sender, EventArgs e)
+		{
+			baglanti.Open();
+
+			string sorgu1 = "SELECT COUNT(*) FROM Yonetici WHERE yoneticiNo = @yoneticiNo";
+			SqlCommand komut = new SqlCommand(sorgu1, baglanti);
+			komut.Parameters.AddWithValue("@yoneticiNo", yoneticiNo.Text);
+			int rowCount = (int)komut.ExecuteScalar();
+
+			if (rowCount > 0)
+			{
+				string sorgu = "DELETE FROM Yonetici WHERE yoneticiNo = @yoneticiNo";
+				komut = new SqlCommand(sorgu, baglanti);
+				komut.Parameters.AddWithValue("@yoneticiNo", yoneticiNo.Text);
+
+				komut.ExecuteNonQuery();
+
+				MessageBox.Show("Yönetici Silindi!");
+			}
+			else
+			{
+				MessageBox.Show("Bu yönetici numarasına sahip bir kayıt bulunamadı.");
+			}
+			baglanti.Close();
 		}
 	}
 }

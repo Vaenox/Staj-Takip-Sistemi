@@ -65,10 +65,9 @@
 			// exitBtn
 			// 
 			this.exitBtn.Image = ((System.Drawing.Image)(resources.GetObject("exitBtn.Image")));
-			this.exitBtn.Location = new System.Drawing.Point(1422, 13);
-			this.exitBtn.Margin = new System.Windows.Forms.Padding(4);
+			this.exitBtn.Location = new System.Drawing.Point(1066, 11);
 			this.exitBtn.Name = "exitBtn";
-			this.exitBtn.Size = new System.Drawing.Size(37, 28);
+			this.exitBtn.Size = new System.Drawing.Size(28, 23);
 			this.exitBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.exitBtn.TabIndex = 26;
 			this.exitBtn.TabStop = false;
@@ -77,10 +76,9 @@
 			// minimizeBtn
 			// 
 			this.minimizeBtn.Image = ((System.Drawing.Image)(resources.GetObject("minimizeBtn.Image")));
-			this.minimizeBtn.Location = new System.Drawing.Point(1377, 20);
-			this.minimizeBtn.Margin = new System.Windows.Forms.Padding(4);
+			this.minimizeBtn.Location = new System.Drawing.Point(1033, 16);
 			this.minimizeBtn.Name = "minimizeBtn";
-			this.minimizeBtn.Size = new System.Drawing.Size(37, 21);
+			this.minimizeBtn.Size = new System.Drawing.Size(28, 17);
 			this.minimizeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.minimizeBtn.TabIndex = 25;
 			this.minimizeBtn.TabStop = false;
@@ -93,10 +91,9 @@
 			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.button2.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.button2.Location = new System.Drawing.Point(640, 679);
-			this.button2.Margin = new System.Windows.Forms.Padding(4);
+			this.button2.Location = new System.Drawing.Point(480, 552);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(294, 63);
+			this.button2.Size = new System.Drawing.Size(220, 51);
 			this.button2.TabIndex = 93;
 			this.button2.Text = "Mevcut Stajyerleri Görüntüle";
 			this.button2.UseVisualStyleBackColor = false;
@@ -107,20 +104,18 @@
 			this.stajBitis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.stajBitis.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.stajBitis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.stajBitis.Location = new System.Drawing.Point(982, 435);
-			this.stajBitis.Margin = new System.Windows.Forms.Padding(4);
+			this.stajBitis.Location = new System.Drawing.Point(736, 353);
 			this.stajBitis.Name = "stajBitis";
-			this.stajBitis.Size = new System.Drawing.Size(353, 27);
+			this.stajBitis.Size = new System.Drawing.Size(265, 22);
 			this.stajBitis.TabIndex = 92;
 			// 
 			// label11
 			// 
 			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label11.ForeColor = System.Drawing.Color.White;
-			this.label11.Location = new System.Drawing.Point(777, 422);
-			this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label11.Location = new System.Drawing.Point(583, 343);
 			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(189, 66);
+			this.label11.Size = new System.Drawing.Size(142, 54);
 			this.label11.TabIndex = 91;
 			this.label11.Text = "Staj Bitiş Tarihi:";
 			// 
@@ -129,20 +124,18 @@
 			this.stajBaslangic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.stajBaslangic.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.stajBaslangic.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.stajBaslangic.Location = new System.Drawing.Point(982, 366);
-			this.stajBaslangic.Margin = new System.Windows.Forms.Padding(4);
+			this.stajBaslangic.Location = new System.Drawing.Point(736, 297);
 			this.stajBaslangic.Name = "stajBaslangic";
-			this.stajBaslangic.Size = new System.Drawing.Size(353, 27);
+			this.stajBaslangic.Size = new System.Drawing.Size(265, 22);
 			this.stajBaslangic.TabIndex = 90;
 			// 
 			// label12
 			// 
 			this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label12.ForeColor = System.Drawing.Color.White;
-			this.label12.Location = new System.Drawing.Point(777, 345);
-			this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label12.Location = new System.Drawing.Point(583, 280);
 			this.label12.Name = "label12";
-			this.label12.Size = new System.Drawing.Size(189, 68);
+			this.label12.Size = new System.Drawing.Size(142, 55);
 			this.label12.TabIndex = 89;
 			this.label12.Text = "Staj Başlangıç Tarihi:";
 			// 
@@ -151,20 +144,18 @@
 			this.stajyerNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.stajyerNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.stajyerNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.stajyerNo.Location = new System.Drawing.Point(388, 462);
-			this.stajyerNo.Margin = new System.Windows.Forms.Padding(4);
+			this.stajyerNo.Location = new System.Drawing.Point(291, 375);
 			this.stajyerNo.Name = "stajyerNo";
-			this.stajyerNo.Size = new System.Drawing.Size(353, 27);
+			this.stajyerNo.Size = new System.Drawing.Size(265, 22);
 			this.stajyerNo.TabIndex = 88;
 			// 
 			// label8
 			// 
 			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label8.ForeColor = System.Drawing.Color.White;
-			this.label8.Location = new System.Drawing.Point(221, 462);
-			this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label8.Location = new System.Drawing.Point(166, 375);
 			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(189, 38);
+			this.label8.Size = new System.Drawing.Size(142, 31);
 			this.label8.TabIndex = 87;
 			this.label8.Text = "Stajyer No:";
 			// 
@@ -172,10 +163,9 @@
 			// 
 			this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label7.ForeColor = System.Drawing.Color.White;
-			this.label7.Location = new System.Drawing.Point(634, 267);
-			this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label7.Location = new System.Drawing.Point(476, 217);
 			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(393, 38);
+			this.label7.Size = new System.Drawing.Size(295, 31);
 			this.label7.TabIndex = 86;
 			this.label7.Text = "Yönetici Stajyer İşlemleri";
 			// 
@@ -183,10 +173,9 @@
 			// 
 			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label6.ForeColor = System.Drawing.Color.White;
-			this.label6.Location = new System.Drawing.Point(633, 42);
-			this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label6.Location = new System.Drawing.Point(475, 34);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(538, 127);
+			this.label6.Size = new System.Drawing.Size(404, 103);
 			this.label6.TabIndex = 85;
 			this.label6.Text = "Kıyı Emniyeti Genel Müdürlüğü Personel Sistemine Hoşgeldiniz.";
 			// 
@@ -195,10 +184,9 @@
 			this.stajyerDepartman.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.stajyerDepartman.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.stajyerDepartman.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.stajyerDepartman.Location = new System.Drawing.Point(388, 424);
-			this.stajyerDepartman.Margin = new System.Windows.Forms.Padding(4);
+			this.stajyerDepartman.Location = new System.Drawing.Point(291, 344);
 			this.stajyerDepartman.Name = "stajyerDepartman";
-			this.stajyerDepartman.Size = new System.Drawing.Size(353, 27);
+			this.stajyerDepartman.Size = new System.Drawing.Size(265, 22);
 			this.stajyerDepartman.TabIndex = 84;
 			// 
 			// stajyerSoyad
@@ -206,20 +194,18 @@
 			this.stajyerSoyad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.stajyerSoyad.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.stajyerSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.stajyerSoyad.Location = new System.Drawing.Point(388, 386);
-			this.stajyerSoyad.Margin = new System.Windows.Forms.Padding(4);
+			this.stajyerSoyad.Location = new System.Drawing.Point(291, 314);
 			this.stajyerSoyad.Name = "stajyerSoyad";
-			this.stajyerSoyad.Size = new System.Drawing.Size(353, 27);
+			this.stajyerSoyad.Size = new System.Drawing.Size(265, 22);
 			this.stajyerSoyad.TabIndex = 83;
 			// 
 			// label5
 			// 
 			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label5.ForeColor = System.Drawing.Color.White;
-			this.label5.Location = new System.Drawing.Point(221, 424);
-			this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label5.Location = new System.Drawing.Point(166, 344);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(189, 38);
+			this.label5.Size = new System.Drawing.Size(142, 31);
 			this.label5.TabIndex = 82;
 			this.label5.Text = "Departmanı:";
 			// 
@@ -227,30 +213,27 @@
 			// 
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(382, 450);
-			this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label4.Location = new System.Drawing.Point(286, 366);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(189, 38);
+			this.label4.Size = new System.Drawing.Size(142, 31);
 			this.label4.TabIndex = 81;
 			// 
 			// label3
 			// 
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label3.ForeColor = System.Drawing.Color.White;
-			this.label3.Location = new System.Drawing.Point(221, 386);
-			this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label3.Location = new System.Drawing.Point(166, 314);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(189, 38);
+			this.label3.Size = new System.Drawing.Size(142, 31);
 			this.label3.TabIndex = 80;
 			this.label3.Text = "Soyadı:";
 			// 
 			// pictureBox2
 			// 
 			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.Location = new System.Drawing.Point(1356, 720);
-			this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+			this.pictureBox2.Location = new System.Drawing.Point(1017, 585);
 			this.pictureBox2.Name = "pictureBox2";
-			this.pictureBox2.Size = new System.Drawing.Size(116, 100);
+			this.pictureBox2.Size = new System.Drawing.Size(87, 81);
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox2.TabIndex = 79;
 			this.pictureBox2.TabStop = false;
@@ -258,9 +241,10 @@
 			// pictureBox3
 			// 
 			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-			this.pictureBox3.Location = new System.Drawing.Point(-73, 34);
+			this.pictureBox3.Location = new System.Drawing.Point(-55, 28);
+			this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.pictureBox3.Name = "pictureBox3";
-			this.pictureBox3.Size = new System.Drawing.Size(33, 31);
+			this.pictureBox3.Size = new System.Drawing.Size(25, 25);
 			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox3.TabIndex = 78;
 			this.pictureBox3.TabStop = false;
@@ -272,10 +256,9 @@
 			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.button1.Location = new System.Drawing.Point(664, 578);
-			this.button1.Margin = new System.Windows.Forms.Padding(4);
+			this.button1.Location = new System.Drawing.Point(498, 470);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(183, 37);
+			this.button1.Size = new System.Drawing.Size(137, 30);
 			this.button1.TabIndex = 77;
 			this.button1.Text = "Stajyer Güncelle";
 			this.button1.UseVisualStyleBackColor = false;
@@ -286,30 +269,27 @@
 			this.stajyerAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
 			this.stajyerAd.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.stajyerAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.stajyerAd.Location = new System.Drawing.Point(388, 347);
-			this.stajyerAd.Margin = new System.Windows.Forms.Padding(4);
+			this.stajyerAd.Location = new System.Drawing.Point(291, 282);
 			this.stajyerAd.Name = "stajyerAd";
-			this.stajyerAd.Size = new System.Drawing.Size(353, 27);
+			this.stajyerAd.Size = new System.Drawing.Size(265, 22);
 			this.stajyerAd.TabIndex = 76;
 			// 
 			// label1
 			// 
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(221, 345);
-			this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+			this.label1.Location = new System.Drawing.Point(166, 280);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(189, 38);
+			this.label1.Size = new System.Drawing.Size(142, 31);
 			this.label1.TabIndex = 75;
 			this.label1.Text = "Adı:";
 			// 
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(177, 42);
-			this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+			this.pictureBox1.Location = new System.Drawing.Point(76, 16);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(345, 269);
+			this.pictureBox1.Size = new System.Drawing.Size(259, 219);
 			this.pictureBox1.TabIndex = 74;
 			this.pictureBox1.TabStop = false;
 			// 
@@ -320,10 +300,9 @@
 			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.button3.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.button3.Location = new System.Drawing.Point(334, 578);
-			this.button3.Margin = new System.Windows.Forms.Padding(4);
+			this.button3.Location = new System.Drawing.Point(250, 470);
 			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(183, 37);
+			this.button3.Size = new System.Drawing.Size(137, 30);
 			this.button3.TabIndex = 94;
 			this.button3.Text = "Stajyer Ekle";
 			this.button3.UseVisualStyleBackColor = false;
@@ -336,10 +315,9 @@
 			this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.button4.ForeColor = System.Drawing.Color.DarkSlateGray;
-			this.button4.Location = new System.Drawing.Point(982, 578);
-			this.button4.Margin = new System.Windows.Forms.Padding(4);
+			this.button4.Location = new System.Drawing.Point(736, 470);
 			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(183, 37);
+			this.button4.Size = new System.Drawing.Size(137, 30);
 			this.button4.TabIndex = 95;
 			this.button4.Text = "Stajyer Sil";
 			this.button4.UseVisualStyleBackColor = false;
@@ -348,9 +326,10 @@
 			// pictureBox4
 			// 
 			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-			this.pictureBox4.Location = new System.Drawing.Point(12, 10);
+			this.pictureBox4.Location = new System.Drawing.Point(9, 8);
+			this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.pictureBox4.Name = "pictureBox4";
-			this.pictureBox4.Size = new System.Drawing.Size(33, 31);
+			this.pictureBox4.Size = new System.Drawing.Size(25, 25);
 			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
 			this.pictureBox4.TabIndex = 96;
 			this.pictureBox4.TabStop = false;
@@ -358,10 +337,10 @@
 			// 
 			// yoneticiPanel
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(91)))), ((int)(((byte)(109)))));
-			this.ClientSize = new System.Drawing.Size(1472, 821);
+			this.ClientSize = new System.Drawing.Size(1104, 667);
 			this.Controls.Add(this.pictureBox4);
 			this.Controls.Add(this.button4);
 			this.Controls.Add(this.button3);
@@ -388,6 +367,7 @@
 			this.Controls.Add(this.exitBtn);
 			this.Controls.Add(this.minimizeBtn);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.Name = "yoneticiPanel";
 			this.Text = " ";
 			this.Load += new System.EventHandler(this.yoneticiPanel_Load);
